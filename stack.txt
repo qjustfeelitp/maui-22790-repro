@@ -1,0 +1,89 @@
+ # Child-SP          RetAddr               Call Site
+00 000000f8`3f77a470 00007ffa`399bcedf     KERNELBASE!RaiseFailFastException+0x152
+01 000000f8`3f77aa50 00007ff9`968951c5     combase!RoFailFastWithErrorContextInternal2+0x5af [onecore\com\combase\winrt\error\error.cpp @ 1481] 
+02 000000f8`3f77acc0 00007ff9`96cb06aa     Microsoft_ui_xaml!FailFastWithStowedExceptions+0x59 [C:\__w\1\s\dxaml\xcp\components\base\ErrorContext.cpp @ 1508] 
+03 000000f8`3f77acf0 00007ff9`96caff9e     Microsoft_ui_xaml!DirectUI::ErrorHelper::ProcessUnhandledError+0x102 [C:\__w\1\s\dxaml\xcp\dxaml\lib\ErrorHelper.cpp @ 582] 
+04 000000f8`3f77ad50 00007ffa`2fd90cb4     Microsoft_ui_xaml!DirectUI::FinalUnhandledErrorDetectedRegistration::OnFinalUnhandledErrorDetected+0xce [C:\__w\1\s\dxaml\xcp\dxaml\lib\ErrorHelper.cpp @ 913] 
+05 000000f8`3f77ade0 00007ffa`2fd90d14     twinapi_appcore!Windows::Internal::Details::GitInvokeHelper<Windows::Foundation::IEventHandler<Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs * __ptr64>,Windows::Internal::GitPtr,2>::Invoke+0x64
+06 000000f8`3f77ae10 00007ffa`2fd7b85a     twinapi_appcore!Windows::ApplicationModel::Core::UnhandledErrorInvokeHelper::Invoke+0x24
+07 000000f8`3f77ae40 00007ffa`2fd7af61     twinapi_appcore!Microsoft::WRL::InvokeTraits<2>::InvokeDelegates<<lambda_e478ebca019219710ec18bdfd8216607>,Windows::Foundation::IEventHandler<Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs * __ptr64> >+0x62
+08 000000f8`3f77ae80 00007ffa`2fd7b709     twinapi_appcore!Microsoft::WRL::EventSource<Windows::Foundation::IEventHandler<Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs * __ptr64>,Microsoft::WRL::InvokeModeOptions<2> >::DoInvoke<<lambda_e478ebca019219710ec18bdfd8216607> >+0x75
+09 000000f8`3f77aec0 00007ffa`2fd8a14d     twinapi_appcore!Microsoft::WRL::EventSource<Windows::Foundation::IEventHandler<Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs * __ptr64>,Microsoft::WRL::InvokeModeOptions<2> >::InvokeAll<std::nullptr_t,Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs * __ptr64>+0x29
+0a 000000f8`3f77af10 00007ffa`2fdaaaa1     twinapi_appcore!Windows::ApplicationModel::Core::CoreApplication::ForwardLocalError+0x7d
+0b 000000f8`3f77af60 00007ffa`399bb85d     twinapi_appcore!Windows::ApplicationModel::Core::CoreApplicationFactory::ForwardLocalError+0x121
+0c 000000f8`3f77afa0 00007ff8`a3df3596     combase!CallErrorForwarder+0x1d9 [onecore\com\combase\winrt\error\error.cpp @ 1614] 
+0d 000000f8`3f77b040 00007ff8`a3df34a7     WinRT_Runtime!WinRT.ExceptionHelpers.ReportUnhandledError+0xb6
+0e 000000f8`3f77b110 00007ff9`01dc5a32     Microsoft_InteractiveExperiences_Projection!Microsoft.UI.Dispatching.DispatcherQueueSynchronizationContext.<>c__DisplayClass2_0.<Post>b__0+0x67
+0f 000000f8`3f77b150 00007ff9`01dc577d     coreclr!ExceptionTracker::CallHandler+0x102 [D:\a\_work\1\s\src\coreclr\vm\exceptionhandling.cpp @ 3396] 
+10 000000f8`3f77b1c0 00007ff9`01dc821d     coreclr!ExceptionTracker::CallCatchHandler+0x99 [D:\a\_work\1\s\src\coreclr\vm\exceptionhandling.cpp @ 687] 
+11 000000f8`3f77b260 00007ffa`3baf50cf     coreclr!ProcessCLRException+0x33d [D:\a\_work\1\s\src\coreclr\vm\exceptionhandling.cpp @ 1166] 
+12 000000f8`3f77b430 00007ffa`3ba70154     ntdll!RtlpExecuteHandlerForUnwind+0xf
+13 000000f8`3f77b460 00007ffa`3baa46bd     ntdll!RtlUnwindEx+0x274
+14 000000f8`3f77bb90 00007ff9`01e51c17     ntdll!RtlUnwind+0xcd
+15 000000f8`3f77c100 00007ff9`01dc827b     coreclr!ClrUnwindEx+0x1b [D:\a\_work\1\s\src\coreclr\vm\exceptionhandling.cpp @ 5417] 
+16 000000f8`3f77c130 00007ffa`3baf504f     coreclr!ProcessCLRException+0x39b [D:\a\_work\1\s\src\coreclr\vm\exceptionhandling.cpp @ 1121] 
+17 000000f8`3f77c300 00007ffa`3ba6e866     ntdll!RtlpExecuteHandlerForException+0xf
+18 000000f8`3f77c330 00007ffa`3baf403e     ntdll!RtlDispatchException+0x286
+19 000000f8`3f77ca80 00007ffa`38fbfabc     ntdll!KiUserExceptionDispatch+0x2e
+1a 000000f8`3f77d180 00007ff9`01dc61ce     KERNELBASE!RaiseException+0x6c
+1b 000000f8`3f77d260 00007ff9`01dc5349     coreclr!RaiseTheExceptionInternalOnly+0x262 [D:\a\_work\1\s\src\coreclr\vm\excep.cpp @ 2795] 
+1c 000000f8`3f77d380 00007ff8`a3df32c9     coreclr!IL_Throw+0xb9 [D:\a\_work\1\s\src\coreclr\vm\jithelpers.cpp @ 4247] 
+1d 000000f8`3f77d4e0 00007ff9`013c5398     System_Private_CoreLib!System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw+0x39 [/_/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs @ 53] 
+1e 000000f8`3f77d510 00007ff8`a3df347f     System_Private_CoreLib!System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_0+0x18 [/_/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs @ 1914] 
+1f 000000f8`3f77d540 00007ff8`a37323ea     Microsoft_InteractiveExperiences_Projection!Microsoft.UI.Dispatching.DispatcherQueueSynchronizationContext.<>c__DisplayClass2_0.<Post>b__0+0x3f
+20 000000f8`3f77d590 00007ff9`d9c53715     Microsoft_InteractiveExperiences_Projection!ABI.Microsoft.UI.Dispatching.DispatcherQueueHandler.Do_Abi_Invoke+0x3a
+21 000000f8`3f77d5f0 00007ff9`d9c009fd     CoreMessagingXP!Microsoft::UI::Dispatching::DispatcherQueue::DeferInvokeCallback+0x15
+22 000000f8`3f77d620 00007ff9`d9c04a56     CoreMessagingXP!CFlat::SehSafe::Execute<<lambda_a81ff790741c2a62f2197c2561f5fe49> >+0x21
+23 000000f8`3f77d650 00007ff9`d9c0b090     CoreMessagingXP!Microsoft::CoreUI::ActionCallback::ImportAdapter$+0x66
+24 000000f8`3f77d690 00007ff9`d9bdb8cf     CoreMessagingXP!Microsoft::CoreUI::Messaging::MessageSession::Callback_InvokeDeferInvoke+0x60
+25 000000f8`3f77d710 00007ff9`d9c19022     CoreMessagingXP!Microsoft::CoreUI::Dispatch::DeferredCall::Callback_Dispatch+0x6c7
+26 000000f8`3f77d7c0 00007ff9`d9bdc880     CoreMessagingXP!Microsoft::CoreUI::Dispatch::DeferredCallDispatcher::Callback_OnDispatch+0x102
+27 000000f8`3f77d800 00007ff9`d9bdc5ed     CoreMessagingXP!Microsoft::CoreUI::Dispatch::Dispatcher::Callback_DispatchNextItem+0x1bc
+28 000000f8`3f77d8a0 00007ff9`d9bcfd7c     CoreMessagingXP!Microsoft::CoreUI::Dispatch::Dispatcher::Callback_DispatchLoop+0x1b9
+29 000000f8`3f77d960 00007ff9`d9bd2c66     CoreMessagingXP!Microsoft::CoreUI::Dispatch::EventLoop::Callback_RunCoreLoop+0x164
+2a 000000f8`3f77d9c0 00007ff9`d9bd2fdc     CoreMessagingXP!Microsoft::CoreUI::Dispatch::UserAdapter::DrainCoreMessagingQueue+0x15a
+2b 000000f8`3f77da80 00007ff9`d9c136a3     CoreMessagingXP!Microsoft::CoreUI::Dispatch::UserAdapter::OnUserDispatch+0x98
+2c 000000f8`3f77dad0 00007ff9`d9c13836     CoreMessagingXP!Microsoft::CoreUI::Dispatch::UserAdapter::DoWork+0xa7
+2d 000000f8`3f77db30 00007ff9`d9c13dae     CoreMessagingXP!Microsoft::CoreUI::Dispatch::UserAdapter::HandleDispatchNotifyMessage+0x132
+2e 000000f8`3f77db90 00007ffa`3b5f89a1     CoreMessagingXP!Microsoft::CoreUI::Dispatch::UserAdapter::WindowProc+0x5e
+2f 000000f8`3f77dbc0 00007ffa`3b5f865c     USER32!UserCallWinProcCheckWow+0x2d1
+30 000000f8`3f77dd20 00007ffa`3b603b9d     USER32!DispatchClientMessage+0x9c
+31 000000f8`3f77dd80 00007ffa`3baf3fe4     USER32!_fnDWORD+0x3d
+32 000000f8`3f77dde0 00007ffa`394a1534     ntdll!KiUserCallbackDispatcherContinue
+33 000000f8`3f77de68 00007ffa`3b605eca     win32u!NtUserGetMessage+0x14
+34 000000f8`3f77de70 00007ff9`e61e1ded     USER32!GetMessageW+0x2a
+35 000000f8`3f77ded0 00007ff9`e61fa88a     bdhkm64+0x1ded
+36 000000f8`3f77e050 00007ff9`e61f5712     bdhkm64!BdhkmIsApiInDllImports+0xafaa
+37 000000f8`3f77e090 00007df4`104910ce     bdhkm64!BdhkmIsApiInDllImports+0x5e32
+38 000000f8`3f77e4b0 00007ff9`966cf4dc     0x00007df4`104910ce
+39 000000f8`3f77e6c0 00007ff9`966cf749     Microsoft_ui_xaml!DirectUI::FrameworkApplication::RunDesktopWindowMessageLoop+0x3c [C:\__w\1\s\dxaml\xcp\dxaml\lib\FrameworkApplication_Partial.cpp @ 1321] 
+3a 000000f8`3f77e740 00007ff9`9657a230     Microsoft_ui_xaml!DirectUI::FrameworkApplication::StartDesktop+0x1fd [C:\__w\1\s\dxaml\xcp\dxaml\lib\FrameworkApplication_Partial.cpp @ 242] 
+3b (Inline Function) --------`--------     Microsoft_ui_xaml!DirectUI::FrameworkApplicationFactory::StartImpl+0x45 [C:\__w\1\s\dxaml\xcp\dxaml\lib\FrameworkApplication_Partial.cpp @ 183] 
+3c 000000f8`3f77e840 00007ff8`a2310735     Microsoft_ui_xaml!DirectUI::FrameworkApplicationFactory::Start+0x70 [C:\__w\1\s\dxaml\xcp\dxaml\lib\winrtgeneratedclasses\FrameworkApplication.g.cpp @ 831] 
+3d 000000f8`3f77e890 00007ff8`a230f55c     Microsoft_WinUI!ABI.Microsoft.UI.Xaml.IApplicationStaticsMethods.Start+0x145 [C:\__w\1\s\BuildOutput\obj\x86fre\src\projection\generated\Microsoft.UI.Xaml.cs @ 13745] 
+3e 000000f8`3f77e9e0 00007ff8`a230f221     Microsoft_WinUI!Microsoft.UI.Xaml.Application.Start+0x2c [C:\__w\1\s\BuildOutput\obj\x86fre\src\projection\generated\Microsoft.UI.Xaml.cs @ 320] 
+3f 000000f8`3f77ea20 00007ff9`01e6c663     Maui22790!Maui22790.WinUI.Program.Main+0x101 [C:\Users\stafl\Documents\GitHub\maui-22790-repro\src\Maui22790\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs @ 32] 
+40 000000f8`3f77ea80 00007ff9`01db4cb1     coreclr!CallDescrWorkerInternal+0x83 [D:\a\_work\1\s\src\coreclr\vm\amd64\CallDescrWorkerAMD64.asm @ 100] 
+41 (Inline Function) --------`--------     coreclr!CallDescrWorkerWithHandler+0x5a [D:\a\_work\1\s\src\coreclr\vm\callhelpers.cpp @ 67] 
+42 000000f8`3f77eac0 00007ff9`01e2088c     coreclr!MethodDescCallSite::CallTargetWorker+0x249 [D:\a\_work\1\s\src\coreclr\vm\callhelpers.cpp @ 570] 
+43 (Inline Function) --------`--------     coreclr!MethodDescCallSite::Call+0xb [D:\a\_work\1\s\src\coreclr\vm\callhelpers.h @ 458] 
+44 000000f8`3f77ec00 00007ff9`01dfe742     coreclr!RunMainInternal+0x11c [D:\a\_work\1\s\src\coreclr\vm\assembly.cpp @ 1304] 
+45 000000f8`3f77ed20 00007ff9`01dfea82     coreclr!RunMain+0xd2 [D:\a\_work\1\s\src\coreclr\vm\assembly.cpp @ 1375] 
+46 000000f8`3f77edd0 00007ff9`01dfe0e7     coreclr!Assembly::ExecuteMainMethod+0x1ca [D:\a\_work\1\s\src\coreclr\vm\assembly.cpp @ 1504] 
+47 000000f8`3f77f0a0 00007ff9`01e49778     coreclr!CorHost2::ExecuteAssembly+0x267 [D:\a\_work\1\s\src\coreclr\vm\corhost.cpp @ 349] 
+48 000000f8`3f77f1a0 00007ff9`0253269f     coreclr!coreclr_execute_assembly+0xd8 [D:\a\_work\1\s\src\coreclr\dlls\mscoree\exports.cpp @ 504] 
+49 (Inline Function) --------`--------     hostpolicy!coreclr_t::execute_assembly+0x29 [D:\a\_work\1\s\src\native\corehost\hostpolicy\coreclr.cpp @ 109] 
+4a 000000f8`3f77f240 00007ff9`0253297c     hostpolicy!run_app_for_context+0x58f [D:\a\_work\1\s\src\native\corehost\hostpolicy\hostpolicy.cpp @ 256] 
+4b 000000f8`3f77f360 00007ff9`0253328a     hostpolicy!run_app+0x3c [D:\a\_work\1\s\src\native\corehost\hostpolicy\hostpolicy.cpp @ 285] 
+4c 000000f8`3f77f3a0 00007ffa`291fb4d9     hostpolicy!corehost_main+0x15a [D:\a\_work\1\s\src\native\corehost\hostpolicy\hostpolicy.cpp @ 426] 
+4d 000000f8`3f77f4a0 00007ffa`291fde86     hostfxr!execute_app+0x2e9 [D:\a\_work\1\s\src\native\corehost\fxr\fx_muxer.cpp @ 145] 
+4e 000000f8`3f77f580 00007ffa`292000dc     hostfxr!`anonymous namespace'::read_config_and_execute+0xa6 [D:\a\_work\1\s\src\native\corehost\fxr\fx_muxer.cpp @ 532] 
+4f 000000f8`3f77f670 00007ffa`291fe453     hostfxr!fx_muxer_t::handle_exec_host_command+0x16c [D:\a\_work\1\s\src\native\corehost\fxr\fx_muxer.cpp @ 1007] 
+50 000000f8`3f77f720 00007ffa`291f84a0     hostfxr!fx_muxer_t::execute+0x483 [D:\a\_work\1\s\src\native\corehost\fxr\fx_muxer.cpp @ 578] 
+51 000000f8`3f77f860 00007ff6`31ecf878     hostfxr!hostfxr_main_startupinfo+0xa0 [D:\a\_work\1\s\src\native\corehost\fxr\hostfxr.cpp @ 62] 
+52 000000f8`3f77f960 00007ff6`31ecfc86     apphost!exe_start+0x868 [D:\a\_work\1\s\src\native\corehost\corehost.cpp @ 240] 
+53 000000f8`3f77fb10 00007ff6`31ed11c8     apphost!wmain+0x146 [D:\a\_work\1\s\src\native\corehost\corehost.cpp @ 311] 
+54 (Inline Function) --------`--------     apphost!invoke_main+0x22 [D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl @ 90] 
+55 000000f8`3f77fb80 00007ffa`3a45257d     apphost!__scrt_common_main_seh+0x10c [D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl @ 288] 
+56 000000f8`3f77fbc0 00007ffa`3baaaf28     KERNEL32!BaseThreadInitThunk+0x1d
+57 000000f8`3f77fbf0 00000000`00000000     ntdll!RtlUserThreadStart+0x28
