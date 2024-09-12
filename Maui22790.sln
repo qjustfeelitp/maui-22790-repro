@@ -12,7 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2890352-06BE-44CD-B2B9-CBB91BCA6940}"
 	ProjectSection(SolutionItems) = preProject
 		stack.txt = stack.txt
-		dump.zip = dump.zip
 	EndProjectSection
 EndProject
 Global
