@@ -19,18 +19,9 @@ public sealed class CrashIt
     /// This will fail because the windows get closed!
     /// </summary>
     [Test]
-    public async Task LetItCrash()
+    public void LetItCrash()
     {
         while (true)
-        {
-            var toElement = FindUIElement("NavigateTo");
-
-            toElement.Click();
-            await Task.Delay(500);
-
-            var fromElement = FindUIElement("NavigateFrom");
-            fromElement.Click();
-            await Task.Delay(500);
-        }
+        { }
     }
 }
